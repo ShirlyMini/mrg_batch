@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-03-22T07:59:57.162040" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Nop" source="C:\Users\user\PycharmProjects\pythonProject_March_mrng_batch\RobotFramework\day2\login_nop.robot">
+<test id="s1-t1" name="TestCase1: Verify Login page title" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-22T07:59:57.583462" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<arg>url=${url}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-22T07:59:57.582463" elapsed="10.708546"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-22T08:00:08.292008" elapsed="0.146863"/>
+</kw>
+<kw name="Log Title" owner="SeleniumLibrary">
+<msg time="2024-03-22T08:00:08.463849" level="INFO">Your store. Login</msg>
+<msg time="2024-03-22T08:00:08.463849" level="INFO">${title} = Your store. Login</msg>
+<var>${title}</var>
+<doc>Logs and returns the title of the current page.</doc>
+<status status="PASS" start="2024-03-22T08:00:08.439870" elapsed="0.023979"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-22T08:00:08.465846" level="INFO">Your store. Login</msg>
+<arg>${title}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-22T08:00:08.464846" elapsed="0.001000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-22T08:00:08.466845" elapsed="2.337822"/>
+</kw>
+<status status="PASS" start="2024-03-22T07:59:57.580458" elapsed="13.225206"/>
+</test>
+<test id="s1-t2" name="TestCase2: Verify Dashbord page" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-22T08:00:10.808664" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<arg>url=${url}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-22T08:00:10.807663" elapsed="11.258509"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-22T08:00:22.068170" elapsed="0.128880"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-22T08:00:22.199050" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${cred_dict['user']}</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T08:00:22.197050" elapsed="0.179834"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-22T08:00:22.378881" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${cred_dict['pass']}</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T08:00:22.377881" elapsed="0.129879"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-22T08:00:22.508759" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
+<arg>xpath://button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T08:00:22.508759" elapsed="2.188989"/>
+</kw>
+<kw name="Log Title" owner="SeleniumLibrary">
+<msg time="2024-03-22T08:00:25.854671" level="INFO">Dashboard / nopCommerce administration</msg>
+<msg time="2024-03-22T08:00:25.854671" level="INFO">${title} = Dashboard / nopCommerce administration</msg>
+<var>${title}</var>
+<doc>Logs and returns the title of the current page.</doc>
+<status status="PASS" start="2024-03-22T08:00:24.698750" elapsed="1.155921"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-22T08:00:25.855668" level="INFO">Dashboard / nopCommerce administration</msg>
+<arg>${title}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-22T08:00:25.855668" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-22T08:00:25.857666" level="INFO">Dashboard page verified successful</msg>
+<arg>Dashboard page verified successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-22T08:00:25.856667" elapsed="0.000999"/>
+</kw>
+<arg>'${title}'=='Dashboard / nopCommerce administration'</arg>
+<arg>Log</arg>
+<arg>Dashboard page verified successful</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-03-22T08:00:25.856667" elapsed="0.000999"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-22T08:00:25.857666" elapsed="2.574602"/>
+</kw>
+<status status="PASS" start="2024-03-22T08:00:10.806663" elapsed="17.626604"/>
+</test>
+<status status="PASS" start="2024-03-22T07:59:57.166036" elapsed="31.269228"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Login Nop">Login Nop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-04-05T07:06:27.229334" rpa="false" schemaversion="5">
+<suite id="s1" name="Windows" source="C:\Users\user\PycharmProjects\pythonProject_March_mrng_batch\RobotFramework\day8\windows.robot">
+<test id="s1-t1" name="Handling tabbed windows" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-05T07:06:44.178871" level="INFO">Opening browser 'edge' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<msg time="2024-04-05T07:07:47.676388" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_123_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)</msg>
+<msg time="2024-04-05T07:07:47.677382" level="WARN">The msedgedriver version (122.0.2365.52) detected in PATH at E:\selenium\drivers\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (123.0.2420.65); currently, msedgedriver  is recommended for MicrosoftEdge 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-05T07:07:47.678389" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event): error trying to connect: dns error: No such host is known. (os error 11001)</msg>
+<msg time="2024-04-05T07:08:23.058812" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-05T07:08:23.058812" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A58D5D42+55138]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A58621C2+219010]
+	(No symbol) [0x00007FF7A5693407]
+	(No symbol) [0x00007FF7A568BDB7]
+	(No symbol) [0x00007FF7A5680013]
+	(No symbol) [0x00007FF7A568116E]
+	(No symbol) [0x00007FF7A568021E]
+	(No symbol) [0x00007FF7A567F450]
+	(No symbol) [0x00007FF7A567F2C4]
+	(No symbol) [0x00007FF7A567D917]
+	(No symbol) [0x00007FF7A567E45C]
+	(No symbol) [0x00007FF7A56959F5]
+	(No symbol) [0x00007FF7A571247E]
+	(No symbol) [0x00007FF7A56F8E0A]
+	(No symbol) [0x00007FF7A56CF017]
+	(No symbol) [0x00007FF7A5711F59]
+	(No symbol) [0x00007FF7A56F8A73]
+	(No symbol) [0x00007FF7A56CE53E]
+	(No symbol) [0x00007FF7A56CD6FC]
+	(No symbol) [0x00007FF7A56CE0F1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7A5A8ED2C+1067068]
+	(No symbol) [0x00007FF7A57433C6]
+	(No symbol) [0x00007FF7A57DCFAC]
+	(No symbol) [0x00007FF7A57D4978]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7A5A8DC75+1062789]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A586BBB1+258417]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A5866AB4+237684]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A5866BEF+237999]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A585D6A1+199777]
+	BaseThreadInitThunk [0x00007FFC99557344+20]
+	RtlUserThreadStart [0x00007FFC9AD626B1+33]
+</msg>
+<arg>url=https://demo.automationtesting.in/Windows.html</arg>
+<arg>browser=edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-04-05T07:06:44.178871" elapsed="112.928239">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A58D5D42+55138]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A58621C2+219010]
+	(No symbol) [0x00007FF7A5693407]
+	(No symbol) [0x00007FF7A568BDB7]
+	(No symbol) [0x00007FF7A5680013]
+	(No symbol) [0x00007FF7A568116E]
+	(No symbol) [0x00007FF7A568021E]
+	(No symbol) [0x00007FF7A567F450]
+	(No symbol) [0x00007FF7A567F2C4]
+	(No symbol) [0x00007FF7A567D917]
+	(No symbol) [0x00007FF7A567E45C]
+	(No symbol) [0x00007FF7A56959F5]
+	(No symbol) [0x00007FF7A571247E]
+	(No symbol) [0x00007FF7A56F8E0A]
+	(No symbol) [0x00007FF7A56CF017]
+	(No symbol) [0x00007FF7A5711F59]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7A56CE53E]
+	(No symbol) [0x00007FF7A56CD6FC]
+	(No symbol) [0x00007FF7A56CE0F1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7A5A8ED2C+1067068]
+	(No symbol) [0x00007FF7A57433C6]
+	(No symbol) [0x00007FF7A57DCFAC]
+	(No symbol) [0x00007FF7A57D4978]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7A5A8DC75+1062789]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A586BBB1+258417]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A5866AB4+237684]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A5866BEF+237999]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A585D6A1+199777]
+	BaseThreadInitThunk [0x00007FFC99557344+20]
+	RtlUserThreadStart [0x00007FFC9AD626B1+33]</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.108109" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://button[@class='btn btn-info']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.109108" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.110109" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Downloads')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.110109" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.111106" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Open New Seperate Windows')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.111106" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://button[@class='btn btn-primary']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.111106" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.112104" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.113104" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Downloads')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.113104" elapsed="0.000000"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.113104" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${handles}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.114103" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>${handles[2]}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.114103" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.127113" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-05T07:08:37.128112" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-05T07:06:44.177267" elapsed="112.951845">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A58D5D42+55138]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A58621C2+219010]
+	(No symbol) [0x00007FF7A5693407]
+	(No symbol) [0x00007FF7A568BDB7]
+	(No symbol) [0x00007FF7A5680013]
+	(No symbol) [0x00007FF7A568116E]
+	(No symbol) [0x00007FF7A568021E]
+	(No symbol) [0x00007FF7A567F450]
+	(No symbol) [0x00007FF7A567F2C4]
+	(No symbol) [0x00007FF7A567D917]
+	(No symbol) [0x00007FF7A567E45C]
+	(No symbol) [0x00007FF7A56959F5]
+	(No symbol) [0x00007FF7A571247E]
+	(No symbol) [0x00007FF7A56F8E0A]
+	(No symbol) [0x00007FF7A56CF017]
+	(No symbol) [0x00007FF7A5711F59]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7A56CE53E]
+	(No symbol) [0x00007FF7A56CD6FC]
+	(No symbol) [0x00007FF7A56CE0F1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7A5A8ED2C+1067068]
+	(No symbol) [0x00007FF7A57433C6]
+	(No symbol) [0x00007FF7A57DCFAC]
+	(No symbol) [0x00007FF7A57D4978]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7A5A8DC75+1062789]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A586BBB1+258417]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A5866AB4+237684]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A5866BEF+237999]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7A585D6A1+199777]
+	BaseThreadInitThunk [0x00007FFC99557344+20]
+	RtlUserThreadStart [0x00007FFC9AD626B1+33]</status>
+</test>
+<status status="FAIL" start="2024-04-05T07:06:27.237343" elapsed="129.897764"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Windows">Windows</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-05T07:07:47.676388" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_123_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)</msg>
+<msg time="2024-04-05T07:07:47.677382" level="WARN">The msedgedriver version (122.0.2365.52) detected in PATH at E:\selenium\drivers\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (123.0.2420.65); currently, msedgedriver  is recommended for MicrosoftEdge 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-05T07:07:47.678389" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event): error trying to connect: dns error: No such host is known. (os error 11001)</msg>
+</errors>
+</robot>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-04-08T08:10:34.814842" rpa="false" schemaversion="5">
+<suite id="s1" name="Scrollby" source="C:\Users\user\PycharmProjects\pythonProject_March_mrng_batch\RobotFramework\day10\scrollby.robot">
+<test id="s1-t1" name="Handling Mouse events- scroll by" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T08:10:35.554878" level="INFO">Opening browser 'chrome' to base url 'https://www.myntra.com/tops'.</msg>
+<arg>url=https://www.myntra.com/tops</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T08:10:35.553878" elapsed="24.903797"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-08T08:11:00.458674" elapsed="0.211802"/>
+</kw>
+<kw name="Execute Async Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T08:11:00.705444" level="INFO">Executing Asynchronous JavaScript:
+window.scrollBy(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<msg time="2024-04-08T08:11:05.944908" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T08:11:05.945907" level="FAIL">TimeoutException: Message: script timeout
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA7470C2+63090]
+	(No symbol) [0x00007FF6DA6B2D12]
+	(No symbol) [0x00007FF6DA54EB1D]
+	(No symbol) [0x00007FF6DA5D467D]
+	(No symbol) [0x00007FF6DA5B6FDA]
+	(No symbol) [0x00007FF6DA5D3412]
+	(No symbol) [0x00007FF6DA5B6D83]
+	(No symbol) [0x00007FF6DA5883A8]
+	(No symbol) [0x00007FF6DA589441]
+	GetHandleVerifier [0x00007FF6DAB4262D+4238301]
+	GetHandleVerifier [0x00007FF6DAB7F78D+4488509]
+	GetHandleVerifier [0x00007FF6DAB77A6F+4456479]
+	GetHandleVerifier [0x00007FF6DA820606+953270]
+	(No symbol) [0x00007FF6DA6BE5DF]
+	(No symbol) [0x00007FF6DA6B92B4]
+	(No symbol) [0x00007FF6DA6B93EB]
+	(No symbol) [0x00007FF6DA6A9C24]
+	BaseThreadInitThunk [0x00007FFC99557344+20]
+	RtlUserThreadStart [0x00007FFC9AD626B1+33]
+</msg>
+<arg>window.scrollBy(0, document.body.scrollHeight);</arg>
+<doc>Executes asynchronous JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2024-04-08T08:11:00.703446" elapsed="5.249454">TimeoutException: Message: script timeout
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA7470C2+63090]
+	(No symbol) [0x00007FF6DA6B2D12]
+	(No symbol) [0x00007FF6DA54EB1D]
+	(No symbol) [0x00007FF6DA5D467D]
+	(No symbol) [0x00007FF6DA5B6FDA]
+	(No symbol) [0x00007FF6DA5D3412]
+	(No symbol) [0x00007FF6DA5B6D83]
+	(No symbol) [0x00007FF6DA5883A8]
+	(No symbol) [0x00007FF6DA589441]
+	GetHandleVerifier [0x00007FF6DAB4262D+4238301]
+	GetHandleVerifier [0x00007FF6DAB7F78D+4488509]
+	GetHandleVerifier [0x00007FF6DAB77A6F+4456479]
+	GetHandleVerifier [0x00007FF6DA820606+953270]
+	(No symbol) [0x00007FF6DA6BE5DF]
+	(No symbol) [0x00007FF6DA6B92B4]
+	(No symbol) [0x00007FF6DA6B93EB]
+	(No symbol) [0x00007FF6DA6A9C24]
+	BaseThreadInitThunk [0x00007FFC99557344+20]
+	RtlUserThreadStart [0x00007FFC9AD626B1+33]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-08T08:11:05.953899" elapsed="0.000999"/>
+</kw>
+<kw name="Execute Async Javascript" owner="SeleniumLibrary">
+<arg>window.scrollBy(0, -document.body.scrollHeight);</arg>
+<doc>Executes asynchronous JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-04-08T08:11:05.955897" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-08T08:11:05.956897" elapsed="0.000000"/>
+</kw>
+<kw name="Execute Async Javascript" owner="SeleniumLibrary">
+<var>${yoffset}</var>
+<arg>window.pageYOffset:</arg>
+<doc>Executes asynchronous JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-04-08T08:11:05.957895" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${yoffset}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-04-08T08:11:05.958897" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-08T08:11:05.959894" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T08:10:35.550882" elapsed="30.410011">TimeoutException: Message: script timeout
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA7470C2+63090]
+	(No symbol) [0x00007FF6DA6B2D12]
+	(No symbol) [0x00007FF6DA54EB1D]
+	(No symbol) [0x00007FF6DA5D467D]
+	(No symbol) [0x00007FF6DA5B6FDA]
+	(No symbol) [0x00007FF6DA5D3412]
+	(No symbol) [0x00007FF6DA5B6D83]
+	(No symbol) [0x00007FF6DA5883A8]
+	(No symbol) [0x00007FF6DA589441]
+	GetHandleVerifier [0x00007FF6DAB4262D+4238301]
+	GetHandleVerifier [0x00007FF6DAB7F78D+4488509]
+	GetHandleVerifier [0x00007FF6DAB77A6F+4456479]
+	GetHandleVerifier [0x00007FF6DA820606+953270]
+	(No symbol) [0x00007FF6DA6BE5DF]
+	(No symbol) [0x00007FF6DA6B92B4]
+	(No symbol) [0x00007FF6DA6B93EB]
+	(No symbol) [0x00007FF6DA6A9C24]
+	BaseThreadInitThunk [0x00007FFC99557344+20]
+	RtlUserThreadStart [0x00007FFC9AD626B1+33]
+</status>
+</test>
+<status status="FAIL" start="2024-04-08T08:10:34.819838" elapsed="31.151046"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Scrollby">Scrollby</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

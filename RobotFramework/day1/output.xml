@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-05-28T07:25:25.305132" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\user\PycharmProjects\pythonProject_March_mrng_batch\RobotFramework\day1\login.robot">
+<test id="s1-t1" name="TestCase1: Verify Login page title" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-28T07:25:29.046657" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<msg time="2024-05-28T07:26:06.721304" level="WARN">The chromedriver version (124.0.6367.201) detected in PATH at C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.112); currently, chromedriver 125.0.6422.78 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>url=https://admin-demo.nopcommerce.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-28T07:25:29.045659" elapsed="73.374537"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T07:26:42.421196" elapsed="0.305817"/>
+</kw>
+<kw name="Log Title" owner="SeleniumLibrary">
+<msg time="2024-05-28T07:26:42.750992" level="INFO">Your store. Login</msg>
+<msg time="2024-05-28T07:26:42.751991" level="INFO">${title} = Your store. Login</msg>
+<var>${title}</var>
+<doc>Logs and returns the title of the current page.</doc>
+<status status="PASS" start="2024-05-28T07:26:42.729012" elapsed="0.022979"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-28T07:26:42.752990" level="INFO">Your store. Login</msg>
+<arg>${title}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-28T07:26:42.751991" elapsed="0.000999"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T07:26:42.752990" elapsed="2.769089"/>
+</kw>
+<status status="PASS" start="2024-05-28T07:25:29.042661" elapsed="76.480048"/>
+</test>
+<test id="s1-t2" name="TestCase2: Verify Dashbord page" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-28T07:26:45.525145" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<msg time="2024-05-28T07:26:46.096727" level="WARN">The chromedriver version (124.0.6367.201) detected in PATH at C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.112); currently, chromedriver 125.0.6422.78 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>url=https://admin-demo.nopcommerce.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-28T07:26:45.525145" elapsed="14.302916"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T07:26:59.829058" elapsed="0.057923"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T07:26:59.888980" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>admin@yourstore.com</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T07:26:59.887980" elapsed="0.204289"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T07:27:00.093268" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>admin</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T07:27:00.092269" elapsed="0.122886"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T07:27:00.216154" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
+<arg>xpath://button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T07:27:00.215155" elapsed="6.041957"/>
+</kw>
+<kw name="Log Title" owner="SeleniumLibrary">
+<msg time="2024-05-28T07:27:07.949538" level="INFO">Dashboard / nopCommerce administration</msg>
+<msg time="2024-05-28T07:27:07.949538" level="INFO">${title} = Dashboard / nopCommerce administration</msg>
+<var>${title}</var>
+<doc>Logs and returns the title of the current page.</doc>
+<status status="PASS" start="2024-05-28T07:27:06.259110" elapsed="1.690428"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-28T07:27:07.950537" level="INFO">Dashboard / nopCommerce administration</msg>
+<arg>${title}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-28T07:27:07.950537" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-28T07:27:07.951536" level="INFO">Dashboard page verified successful</msg>
+<arg>Dashboard page verified successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-28T07:27:07.951536" elapsed="0.000000"/>
+</kw>
+<arg>'${title}'=='Dashboard / nopCommerce administration'</arg>
+<arg>Log</arg>
+<arg>Dashboard page verified successful</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-28T07:27:07.951536" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T07:27:07.952536" elapsed="2.461713"/>
+</kw>
+<status status="PASS" start="2024-05-28T07:26:45.524140" elapsed="24.891108"/>
+</test>
+<status status="PASS" start="2024-05-28T07:25:25.308134" elapsed="105.108111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-28T07:26:06.721304" level="WARN">The chromedriver version (124.0.6367.201) detected in PATH at C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.112); currently, chromedriver 125.0.6422.78 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-05-28T07:26:46.096727" level="WARN">The chromedriver version (124.0.6367.201) detected in PATH at C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.112); currently, chromedriver 125.0.6422.78 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

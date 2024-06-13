@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-06-13T07:52:07.845000" rpa="false" schemaversion="5">
+<suite id="s1" name="Verify frames" source="C:\Users\user\PycharmProjects\pythonProject_March_mrng_batch\Project_RF\Test\Verify_frames.robot">
+<kw name="Nop Commerce Suite Setup" owner="Keywords" type="SETUP">
+<kw name="Set Log Level" owner="BuiltIn">
+<msg time="2024-06-13T07:52:08.275983" level="DEBUG">Log level changed from INFO to TRACE.</msg>
+<msg time="2024-06-13T07:52:08.275983" level="TRACE">Return: 'INFO'</msg>
+<arg>TRACE</arg>
+<doc>Sets the log threshold to the specified level.</doc>
+<status status="PASS" start="2024-06-13T07:52:08.274988" elapsed="0.000995"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2024-06-13T07:52:08.276983" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-06-13T07:52:08.276983" level="TRACE">Return: '0 seconds'</msg>
+<msg time="2024-06-13T07:52:08.276983" level="INFO">${speed} = 0 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-06-13T07:52:08.276983" elapsed="0.000999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-13T07:52:08.277982" level="TRACE">Arguments: [ '0 seconds' | console=True ]</msg>
+<msg time="2024-06-13T07:52:08.277982" level="INFO">0 seconds</msg>
+<msg time="2024-06-13T07:52:08.281979" level="TRACE">Return: None</msg>
+<arg>${speed}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-13T07:52:08.277982" elapsed="0.003997"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<msg time="2024-06-13T07:52:08.282979" level="TRACE">Arguments: [ datetime.timedelta(microseconds=500000) ]</msg>
+<msg time="2024-06-13T07:52:08.282979" level="TRACE">Return: '0 seconds'</msg>
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-06-13T07:52:08.281979" elapsed="0.001000"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2024-06-13T07:52:08.282979" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-06-13T07:52:08.283977" level="TRACE">Return: '500 milliseconds'</msg>
+<msg time="2024-06-13T07:52:08.283977" level="INFO">${speed} = 500 milliseconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-06-13T07:52:08.282979" elapsed="0.000998"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-13T07:52:08.284976" level="TRACE">Arguments: [ '500 milliseconds' | console=True ]</msg>
+<msg time="2024-06-13T07:52:08.284976" level="INFO">500 milliseconds</msg>
+<msg time="2024-06-13T07:52:08.285976" level="TRACE">Return: None</msg>
+<arg>${speed}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-13T07:52:08.284976" elapsed="0.001000"/>
+</kw>
+<msg time="2024-06-13T07:52:08.285976" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-06-13T07:52:08.272988" elapsed="0.012988"/>
+</kw>
+<test id="s1-t1" name="TC1 Verify Frames" line="11">
+<kw name="Demo_Frames Test Setup" owner="Keywords" type="SETUP">
+<msg time="2024-06-13T07:52:08.287973" level="TRACE">Arguments: [ ${web_browser}='chrome' ]</msg>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-13T07:52:08.288972" level="TRACE">Arguments: [ url='https://demo.automationtesting.in/Frames.html' | browser='chrome' ]</msg>
+<msg time="2024-06-13T07:52:08.288972" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Frames.html'.</msg>
+<msg time="2024-06-13T07:52:08.289971" level="DEBUG">Selenium Manager binary found at: C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe</msg>
+<msg time="2024-06-13T07:52:08.289971" level="DEBUG">Executing process: C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --language-binding python --output json</msg>
+<msg time="2024-06-13T07:52:09.042766" level="WARN">The chromedriver version (124.0.6367.201) detected in PATH at C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.142); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-06-13T07:52:09.043765" level="DEBUG">Driver path: C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe</msg>
+<msg time="2024-06-13T07:52:09.044766" level="DEBUG">Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe</msg>
+<msg time="2024-06-13T07:52:09.044766" level="DEBUG">Using driver at: C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe</msg>
+<msg time="2024-06-13T07:52:09.068743" level="DEBUG">Started executable: `C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe` in a child process with pid: 18552 using 0 to output -3</msg>
+<msg time="2024-06-13T07:52:09.590587" level="DEBUG">POST http://localhost:65312/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}</msg>
+<msg time="2024-06-13T07:52:09.590587" level="DEBUG">Starting new HTTP connection (1): localhost:65312</msg>
+<msg time="2024-06-13T07:52:11.252606" level="DEBUG">http://localhost:65312 "POST /session HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:11.252606" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"125.0.6422.142","chrome":{"chromedriverVersion":"124.0.6367.201 (46cf136d27d50afd9c618d164a3b95b3b62d0027-refs/branch-heads/6367@{#1130})","userDataDir":"C:\\Users\\user\\AppData\\Local\\Temp\\scoped_dir18552_219218645"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:65316"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"67f736349b17c2e3bd5064c21a81ef7b"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:11.252606" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:11.252606" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/timeouts {'script': 5000}</msg>
+<msg time="2024-06-13T07:52:11.571951" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:11.571951" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:11.571951" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:11.571951" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/timeouts {'implicit': 0}</msg>
+<msg time="2024-06-13T07:52:11.575947" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:11.575947" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:11.575947" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:11.575947" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/timeouts {'pageLoad': 300000}</msg>
+<msg time="2024-06-13T07:52:11.577945" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:11.577945" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:11.578944" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:11.578944" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/url {'url': 'https://demo.automationtesting.in/Frames.html'}</msg>
+<msg time="2024-06-13T07:52:17.629116" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/url HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:17.630116" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:17.630116" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:18.132330" level="DEBUG">Opened browser with session id 67f736349b17c2e3bd5064c21a81ef7b.</msg>
+<msg time="2024-06-13T07:52:18.132330" level="TRACE">Return: 1</msg>
+<arg>url=${demo_url2}</arg>
+<arg>browser=${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-13T07:52:08.287973" elapsed="9.844357"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-06-13T07:52:18.132330" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-06-13T07:52:18.133365" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/window/maximize {}</msg>
+<msg time="2024-06-13T07:52:28.936627" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/window/maximize HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:28.936627" level="DEBUG">Remote response: status=200 | data={"value":{"height":744,"width":1382,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:28.936627" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:29.437940" level="TRACE">Return: None</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-13T07:52:18.132330" elapsed="11.305610"/>
+</kw>
+<msg time="2024-06-13T07:52:29.437940" level="TRACE">Return: None</msg>
+<arg>chrome</arg>
+<status status="PASS" start="2024-06-13T07:52:08.286977" elapsed="21.150963"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-06-13T07:52:29.438914" level="TRACE">Arguments: [ "//iframe[@id='singleframe']" ]</msg>
+<msg time="2024-06-13T07:52:29.438914" level="INFO">Selecting frame '//iframe[@id='singleframe']'.</msg>
+<msg time="2024-06-13T07:52:29.439915" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/elements {'using': 'xpath', 'value': "//iframe[@id='singleframe']"}</msg>
+<msg time="2024-06-13T07:52:29.456878" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:29.456878" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.AEB1501CFA2CA5CF2159F99CF9A11CD4.d.06E2D802910E1E20AB7E5F7C8173DD40.e.6"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:29.456878" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:29.958291" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/frame {'id': {'element-6066-11e4-a52e-4f735466cecf': 'f.AEB1501CFA2CA5CF2159F99CF9A11CD4.d.06E2D802910E1E20AB7E5F7C8173DD40.e.6'}}</msg>
+<msg time="2024-06-13T07:52:29.996249" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/frame HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:29.996249" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:29.996249" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:30.497785" level="TRACE">Return: None</msg>
+<arg>${xpath_frame}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-06-13T07:52:29.438914" elapsed="1.058871"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-13T07:52:30.498784" level="TRACE">Arguments: [ "//input[@type='text']" | 'welcome' ]</msg>
+<msg time="2024-06-13T07:52:30.498784" level="INFO">Typing text 'welcome' into text field '//input[@type='text']'.</msg>
+<msg time="2024-06-13T07:52:30.498784" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/elements {'using': 'xpath', 'value': "//input[@type='text']"}</msg>
+<msg time="2024-06-13T07:52:30.627662" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/elements HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:30.628661" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.D882325397395E0AA73982AC17D66BAA.d.5B6F2C2A394D02267090DA0C0CB64009.e.43"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:30.628661" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:31.130194" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/element/f.D882325397395E0AA73982AC17D66BAA.d.5B6F2C2A394D02267090DA0C0CB64009.e.43/clear {}</msg>
+<msg time="2024-06-13T07:52:31.190138" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/element/f.D882325397395E0AA73982AC17D66BAA.d.5B6F2C2A394D02267090DA0C0CB64009.e.43/clear HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:31.191137" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:31.191137" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:31.691673" level="DEBUG">POST http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b/element/f.D882325397395E0AA73982AC17D66BAA.d.5B6F2C2A394D02267090DA0C0CB64009.e.43/value {'text': 'welcome', 'value': ['w', 'e', 'l', 'c', 'o', 'm', 'e']}</msg>
+<msg time="2024-06-13T07:52:31.828553" level="DEBUG">http://localhost:65312 "POST /session/67f736349b17c2e3bd5064c21a81ef7b/element/f.D882325397395E0AA73982AC17D66BAA.d.5B6F2C2A394D02267090DA0C0CB64009.e.43/value HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:52:31.829552" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:52:31.829552" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:52:32.331083" level="TRACE">Return: None</msg>
+<arg>${xpath_frame_input}</arg>
+<arg>${input_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-13T07:52:30.498784" elapsed="1.832299"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-13T07:52:32.332083" level="TRACE">Arguments: [ '5s' ]</msg>
+<msg time="2024-06-13T07:52:37.332820" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-06-13T07:52:37.332820" level="TRACE">Return: None</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-13T07:52:32.331083" elapsed="5.001737"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2024-06-13T07:52:37.333819" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-06-13T07:52:37.333819" level="DEBUG">Closing all browsers.</msg>
+<msg time="2024-06-13T07:52:37.333819" level="DEBUG">DELETE http://localhost:65312/session/67f736349b17c2e3bd5064c21a81ef7b {}</msg>
+<msg time="2024-06-13T07:53:01.638894" level="DEBUG">http://localhost:65312 "DELETE /session/67f736349b17c2e3bd5064c21a81ef7b HTTP/1.1" 200 0</msg>
+<msg time="2024-06-13T07:53:01.638894" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-06-13T07:53:01.639894" level="DEBUG">Finished Request</msg>
+<msg time="2024-06-13T07:53:04.156424" level="TRACE">Return: None</msg>
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-06-13T07:52:37.333819" elapsed="26.822605"/>
+</kw>
+<status status="PASS" start="2024-06-13T07:52:08.285976" elapsed="55.871449"/>
+</test>
+<status status="PASS" start="2024-06-13T07:52:07.846997" elapsed="56.311425"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Verify frames">Verify frames</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-13T07:52:09.042766" level="WARN">The chromedriver version (124.0.6367.201) detected in PATH at C:\Users\user\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.142); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

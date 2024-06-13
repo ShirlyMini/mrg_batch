@@ -1,0 +1,16 @@
+1716864779375	geckodriver	INFO	Listening on 127.0.0.1:50133
+1716864782458	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50134" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileaprHjm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1716864783127	Marionette	INFO	Marionette enabled
+1716864783271	Marionette	INFO	Listening on port 50143
+Read port: 50143
+WebDriver BiDi listening on ws://127.0.0.1:50134
+1716864783969	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50134/devtools/browser/c43ba3bb-b5dd-47d5-b4d4-ee214a61b0e5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+JavaScript error: https://admin-demo.nopcommerce.com/admin/, line 3: SyntaxError: expected expression, got '==='
+1716864806346	Marionette	INFO	Stopped listening on port 50143
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

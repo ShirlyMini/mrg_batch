@@ -1,0 +1,19 @@
+robot --log-level Trace TestCases_Login.robot
+or
+#Set Log Level   Trace
+
+####running tags
+robot --include tc3 TestCases_Login.robot
+or
+robot -i tc3 TestCases_Login.robot
+
+
+#####running tc with diff log name
+robot -l log_login.html TestCases_Login.robot
+robot -i tc1 --log-level Info -l log_login.html TestCases_Login.robot
+
+#### change variable
+
+robot -i tc1 --log-level Info -l log_login.html --variable user:nopcommerce TestCases_Login2.robot
+robot -i tc1 --log-level Info -l log_login.html -v user:nopcommerce TestCases_Login2.robot
+robot -i tc1 --log-level Info -l log_login.html -v user:nopcommerce -v pass:abcd TestCases_Login2.robot

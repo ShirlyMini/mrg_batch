@@ -1,0 +1,14 @@
+-source code management
+
+    -global repository
+    -local repository
+
+-local repository
+    - install git client(https://www.git-scm.com/download/win)
+    - open git bash---> cli prompt
+    - convert local folder to local repo
+        -create local repo (git init)
+        - add the files/folders to empty repo(git add, git commit)
+            git add -A
+
+

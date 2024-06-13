@@ -1,0 +1,8 @@
+{"login_data":
+{
+  "row1": {"user": "admin@yourstore.com", "password": "admin", "expected": "Pass"},
+  "row2": {"user": "admin@yourstore.com", "password": "min", "expected": "Fail"},
+  "row3": {"user": "admin@store.com", "password": "adm", "expected": "Fail"},
+  "row4": {"user": "admin@yourstore", "password": "admin", "expected": "Fail"}
+}
+}

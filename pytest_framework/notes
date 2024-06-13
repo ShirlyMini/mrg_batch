@@ -1,0 +1,3 @@
+pytest -v Test_TS1.py
+pytest -v -s Test_TS1.py
+pytest Test_TS1.py

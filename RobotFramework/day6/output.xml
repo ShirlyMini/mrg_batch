@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-04-01T08:10:30.969922" rpa="false" schemaversion="5">
+<suite id="s1" name="Selenium Implicit" source="C:\Users\user\PycharmProjects\pythonProject_March_mrng_batch\RobotFramework\day6\selenium_implicit.robot">
+<test id="s1-t1" name="TestCase1: Select unordered list" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:31.366864" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<arg>url=${url}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-01T08:10:31.365866" elapsed="7.416380"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-01T08:10:38.784243" elapsed="0.167948"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:38.954190" level="INFO">${timeout1} = 0 seconds</msg>
+<var>${timeout1}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-04-01T08:10:38.953191" elapsed="0.000999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-01T08:10:38.954190" level="INFO">0 seconds</msg>
+<arg>${timeout1}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-01T08:10:38.954190" elapsed="0.000997"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-04-01T08:10:38.955187" elapsed="0.001999"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:38.958186" level="INFO">${timeout2} = 10 seconds</msg>
+<var>${timeout2}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-04-01T08:10:38.957186" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-01T08:10:38.959185" level="INFO">10 seconds</msg>
+<arg>${timeout2}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-01T08:10:38.958186" elapsed="0.000999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:38.961181" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${cred_dict['user']}</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-01T08:10:38.959185" elapsed="0.291728"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:39.251913" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${cred_dict['pass']}</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-01T08:10:39.250913" elapsed="0.145876"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:39.399774" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
+<arg>xpath://button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-01T08:10:39.399774" elapsed="1.839506"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:42.704860" level="INFO">Page title is 'Dashboard / nopCommerce administration'.</msg>
+<arg>Dashboard / nopCommerce administration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-01T08:10:41.240278" elapsed="1.464582"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:42.706858" level="INFO">Clicking element 'xpath://ul[@role='menu']/li/a/p[contains(text(),'Sales')]'.</msg>
+<arg>xpath://ul[@role='menu']/li/a/p[contains(text(),'Sales')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-01T08:10:42.705860" elapsed="0.219376"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:42.928235" level="INFO">Clicking element 'xpath://p[contains(text(),'Orders')]'.</msg>
+<arg>xpath://p[contains(text(),'Orders')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-01T08:10:42.927235" elapsed="1.306617"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:45.093224" level="INFO">Page title is 'Orders / nopCommerce administration'.</msg>
+<arg>Orders / nopCommerce administration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-01T08:10:44.239847" elapsed="0.853377"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:45.094223" level="INFO">Selecting options from selection list 'id:WarehouseId' by label Warehouse 2 (Los Angeles).</msg>
+<arg>id:WarehouseId</arg>
+<arg>Warehouse 2 (Los Angeles)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-01T08:10:45.094223" elapsed="0.138870"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:45.234092" level="INFO">Verifying list 'id:WarehouseId' has option [ Warehouse 2 (Los Angeles) ] selected.</msg>
+<msg time="2024-04-01T08:10:45.252075" level="INFO">Current page contains list 'id:WarehouseId'.</msg>
+<arg>id:WarehouseId</arg>
+<arg>Warehouse 2 (Los Angeles)</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2024-04-01T08:10:45.233093" elapsed="0.130878"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:45.364970" level="INFO">Selecting options from selection list 'id:PaymentMethodSystemName' by value Payments.PayPalCommerce.</msg>
+<arg>id:PaymentMethodSystemName</arg>
+<arg>Payments.PayPalCommerce</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-01T08:10:45.364970" elapsed="0.110897"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:45.476865" level="INFO">Verifying list 'id:PaymentMethodSystemName' has option [ PayPal Commerce ] selected.</msg>
+<msg time="2024-04-01T08:10:45.494849" level="INFO">Current page contains list 'id:PaymentMethodSystemName'.</msg>
+<arg>id:PaymentMethodSystemName</arg>
+<arg>PayPal Commerce</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2024-04-01T08:10:45.475867" elapsed="0.131876"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:45.608741" level="INFO">Selecting options from selection list 'id:BillingCountryId' by index 1.</msg>
+<arg>id:BillingCountryId</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-04-01T08:10:45.608741" elapsed="0.152859"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-01T08:10:45.763597" level="INFO">Verifying list 'id:BillingCountryId' has option [ United States ] selected.</msg>
+<msg time="2024-04-01T08:10:45.777587" level="INFO">Current page contains list 'id:BillingCountryId'.</msg>
+<arg>id:BillingCountryId</arg>
+<arg>United States</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2024-04-01T08:10:45.762601" elapsed="2.116026"/>
+</kw>
+<status status="PASS" start="2024-04-01T08:10:31.363866" elapsed="16.515761"/>
+</test>
+<status status="PASS" start="2024-04-01T08:10:30.972918" elapsed="16.907707"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Selenium Implicit">Selenium Implicit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-03-22T09:01:47.090377" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases Login2" source="C:\Users\user\PycharmProjects\pythonProject_March_mrng_batch\RobotFramework\day3\TestCases_Login2.robot">
+<test id="s1-t1" name="TestCase1: Verify Dashbord page" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-22T09:01:47.498790" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<arg>url=${url}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-22T09:01:47.498790" elapsed="7.963391"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-22T09:01:55.464181" elapsed="0.141492"/>
+</kw>
+<kw name="Login with Username and Password-with parameter" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-22T09:01:55.608670" level="INFO">Typing text 'nopcommerce' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T09:01:55.607673" elapsed="0.265979"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-22T09:01:55.874650" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<arg>clear=True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T09:01:55.874650" elapsed="0.139872"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-22T09:01:56.015519" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
+<arg>xpath://button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T09:01:56.015519" elapsed="0.088917"/>
+</kw>
+<arg>${user}</arg>
+<arg>${pass}</arg>
+<status status="PASS" start="2024-03-22T09:01:55.606673" elapsed="0.497763"/>
+</kw>
+<kw name="Log Title" owner="SeleniumLibrary">
+<msg time="2024-03-22T09:01:56.112429" level="INFO">Your store. Login</msg>
+<msg time="2024-03-22T09:01:56.112429" level="INFO">${title} = Your store. Login</msg>
+<var>${title}</var>
+<doc>Logs and returns the title of the current page.</doc>
+<status status="PASS" start="2024-03-22T09:01:56.105435" elapsed="0.007993"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-22T09:01:56.113428" level="INFO">Your store. Login</msg>
+<arg>${title}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-22T09:01:56.113428" elapsed="0.000997"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Fail" owner="BuiltIn">
+<msg time="2024-03-22T09:01:56.115427" level="FAIL">AssertionError</msg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="FAIL" start="2024-03-22T09:01:56.115427" elapsed="0.000000">AssertionError</status>
+</kw>
+<arg>'${title}'=='Dashboard / nopCommerce administration'</arg>
+<arg>Log</arg>
+<arg>Dashboard page verified successful</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="FAIL" start="2024-03-22T09:01:56.114425" elapsed="0.001002">AssertionError</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-22T09:01:56.116425" elapsed="0.000000"/>
+</kw>
+<tag>sanity</tag>
+<tag>tc1</tag>
+<status status="FAIL" start="2024-03-22T09:01:47.496792" elapsed="8.619633">AssertionError</status>
+</test>
+<status status="FAIL" start="2024-03-22T09:01:47.094375" elapsed="9.024049"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">sanity</stat>
+<stat pass="0" fail="1" skip="0">tc1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases Login2">TestCases Login2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
