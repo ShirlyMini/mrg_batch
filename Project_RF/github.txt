@@ -10,5 +10,16 @@
         -create local repo (git init)
         - add the files/folders to empty repo(git add, git commit)
             git add -A
+            git commit -m "msg"
 
 
+-global repository
+    github.com--register
+
+    -create empty global repo
+        -https://github.com/ShirlyMini/mrg_batch.git
+    - connection btwn local and global repo
+        git remote add origin https://github.com/ShirlyMini/mrg_batch.git
+
+    - upload files to global repo
+        git push -u origin main
